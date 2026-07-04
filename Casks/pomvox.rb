@@ -2,8 +2,7 @@ cask "pomvox" do
   version "0.1.0"
   sha256 "ecd04f450b50ed13bb385f6e2d48eb2575f3b6cb9122b3401185ad8f520e1022"
 
-  url "https://github.com/abhiram304/pomvox/releases/download/v#{version}/Pomvox.dmg",
-      verified: "github.com/abhiram304/pomvox/"
+  url "https://github.com/abhiram304/pomvox/releases/download/v#{version}/Pomvox.dmg"
   name "Pomvox"
   desc "On-device voice dictation for Apple Silicon Macs"
   homepage "https://github.com/abhiram304/pomvox"
