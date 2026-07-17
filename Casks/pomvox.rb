@@ -1,15 +1,17 @@
 cask "pomvox" do
-  version "0.1.10"
-  sha256 "92bf5c3439fddb83eeb33b9995d8acad104200922d93dcb187d14ade423d990f"
+  version "0.2.0"
+  sha256 "d3d29afe60404ecc48acd69605ff523e71f8af02f9528527e6bf1ef16f0b2ab9"
 
   url "https://github.com/abhiram304/pomvox/releases/download/v#{version}/Pomvox.dmg"
   name "Pomvox"
   desc "On-device voice dictation for Apple Silicon Macs"
   homepage "https://github.com/abhiram304/pomvox"
 
+  auto_updates true
+
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://raw.githubusercontent.com/abhiram304/pomvox/main/appcast.xml"
+    strategy :sparkle
   end
 
   depends_on macos: :sonoma
